@@ -2,30 +2,31 @@
 
 body {
   height: 1000px;
-  background: linear-gradient(180deg, rgb(190, 20, 20), rgb(212, 116, 6));
+  background: #333;
   font-family: Roboto, sans-serif;
   font-size: 24px;
   line-height: 36px;
 }
 .container {
-  background-color: seashell;
   max-width: 1220px;
   margin: 0 auto;
 }
 h1 {
   text-align: center;
+  color: #fff;
 }
-.top {
-  display: flex;
-  justify-content: center;
-}
+
 ul {
-  padding:0 15px;
+  padding: 0 15px;
   list-style-type: none;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 5px;
+  grid-gap: 40px;
 }
+/* button {
+  width: 25px;
+  height: 25px;
+} */
 li {
   min-height: 70px;
   display: flex;
@@ -33,25 +34,53 @@ li {
   align-items: center;
   border: 1px solid;
   border-radius: 6px;
-  background-color: rgb(255, 255, 0);
-  box-shadow: 4px 2px 2px rgb(0, 0, 0);
+  border-color: #fff;
+  background-color: #333;
+  box-shadow: 4px 4px 4px rgb(175, 173, 173);
 }
 #add-btn {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+#add-task,
+.complete-btn {
+  border: none;
+  border-radius: 2px;
+  background-color: #fd9460;
+}
+#add-task:hover {
+  border: 1px solid #fd9460;
+  border-radius: 2px;
+  background-color: #333;
+}
 input {
   margin-left: 5px;
+  color: #333;
   border: none;
   font-size: 18px;
-  line-height: 26px;
+  line-height: 32px;
 }
 
 .input-onblur {
-  background-color: rgb(255, 255, 0);
   border: none;
+  color: #fff;
+  background-color: #333;
 }
 .complete {
   text-decoration: line-through;
+  text-decoration-color: #fd9460;
+  opacity: 0.5;
+}
+.bi-check,
+.bi-plus-lg,
+.bi-x {
+  padding-top: 2px;
+  fill: #fff;
+}
+
+.trash-btn {
+  border: none;
+  border-radius: 2px;
+  background-color: rgb(230, 125, 125);
 }
