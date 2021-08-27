@@ -23,10 +23,13 @@ ul {
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 40px;
 }
-/* button {
-  width: 25px;
-  height: 25px;
-} */
+button {
+  width: 43px;
+  height: 34px;
+  border: none;
+  color: #fff;
+  text-align: center;
+}
 li {
   min-height: 70px;
   display: flex;
@@ -68,19 +71,19 @@ input {
   background-color: #333;
 }
 .complete {
-  text-decoration: line-through;
-  text-decoration-color: #fd9460;
   opacity: 0.5;
 }
-.bi-check,
-.bi-plus-lg,
-.bi-x {
+
+.bi-plus-lg {
   padding-top: 2px;
   fill: #fff;
 }
 
 .trash-btn {
-  border: none;
   border-radius: 2px;
   background-color: rgb(230, 125, 125);
+}
+#icon-trash-btn {
+  width: auto;
+  height: 100%;
 }

@@ -1,16 +1,16 @@
-const path = require('path');
+import { resolve } from "path";
 
-module.exports={
-    entry: './js/main.js',
-    module:{
-        rules: [
-            {test: /\.svg$/, use: 'svg-inline-loader'},
-            {test: /\.css$/, use: ['style-loader','css-loader']},
-            {test: /\.(js)$/, use: 'babel-loader'},
-        ]
-    },
-    output: {
-        path: path.resolve(__dirname, 'dist'),
-        filename: 'index_bundle.js'
-    }
-}
+export const entry = "./js/main.js";
+require("./js/add-to-do");
+export const module = {
+  rules: [
+    { test: /\.svg$/, use: "svg-inline-loader" },
+    { test: /\.css$/, use: ["style-loader", "css-loader"] },
+    { test: /\.(js)$/, use: "babel-loader" },
+  ],
+};
+export const mode = "development";
+export const output = {
+  path: resolve(__dirname, "dist"),
+  filename: "index.js",
+};
